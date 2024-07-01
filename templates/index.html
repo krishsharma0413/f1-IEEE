@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/output.css">
+</head>
+<body class="bg-bg overflow-hidden">
+
+    <nav class="relative flex w-full justify-between p-4 place-items-center">
+
+        <img src="../static/logo.png" alt="logo" class="w-[20%]">
+        
+        <a class="mr-4 px-3 py-2 rounded-lg border-4 font-bold
+         border-text font-nulshock text-text text-center
+        hover:border-accent transition duration-300 ease-in-out"
+         href ="https://github.com/krishsharma0413/f1-ieee">
+            GitHub
+        </a>
+    </nav>
+    <hr class="border-2 border-text">
+
+    <div class="absolut flex w-screen h-screen justify-center place-items-center">
+        <div class="border-accent border-4 w-[80%] p-3 rounded-lg">
+            <h1 class="text-6xl font-bold font-nulshock text-center text-text"><span class=" font-nulshock text-accent">F1</span>NALYZE</h1>
+            <p class="text-center text-text font-nulshock">
+                Insert your CSV file here and get the submission.csv file with the predictions.
+            </p>
+            <form action="/submit" method="post" enctype="multipart/form-data" class="flex justify-center place-items-center">
+                <input type="file" name="file" class="border-2 border-text rounded-lg p-2">
+                <button type="submit" class="border-2 border-text rounded-lg p-2 ml-2 font-nulshock text-text hover:border-accent transition duration-300 ease-in-out">Upload</button>
+            </form>
+
+        </div>
+    </div>
+
+
+    <img class="absolute bottom-0 right-0 w-[200px]" src="../static/ieee.png">
+
+</body>
+</html>
